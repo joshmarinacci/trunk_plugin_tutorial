@@ -1,10 +1,17 @@
 version: 0.1
+tools:
+  definitions:
+    - name: foofinder
+      runtime: node
+      package: trunk_plugin_tutorial
+      known_good_version: 1.0.0
 lint:
   definitions:
     - name: foofinder
       files: [ALL]
-      runtime: node
-      package: trunk_plugin_tutorial
+      tools: [foofinder]
+#      runtime: node
+#      package: trunk_plugin_tutorial
       commands:
         - output: pass_fail
           success_codes: [0,1]
