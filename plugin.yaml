@@ -1,0 +1,11 @@
+version: 0.1
+lint:
+  definitions:
+    - name: foofinder
+      files: [ALL]
+      runtime: node
+      commands:
+        - output: pass_fail
+          success_codes: [0,1]
+          run: node ${plugin}/findfoo.js ${target}
+          read_output_from: stdout
