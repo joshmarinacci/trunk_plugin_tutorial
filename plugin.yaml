@@ -4,6 +4,7 @@ lint:
     - name: foofinder
       files: [ALL]
       runtime: node
+      package: trunk_plugin_tutorial
       commands:
         - output: pass_fail
           success_codes: [0,1]
