@@ -5,7 +5,7 @@ tools:
       runtime: node
       package: trunk_plugin_tutorial
       shims: [foofinder]
-      known_good_version: 1.0.0
+      known_good_version: 1.0.1
 lint:
   definitions:
     - name: foofinder
