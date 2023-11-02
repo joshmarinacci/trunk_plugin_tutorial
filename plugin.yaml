@@ -4,17 +4,17 @@ tools:
     - name: foofinder
       runtime: node
       package: trunk_plugin_tutorial
-      shims: [foofinder]
+      shims: [ foofinder ]
       known_good_version: 1.0.1
 lint:
   definitions:
     - name: foofinder
-      files: [ALL]
-      tools: [foofinder]
-#      runtime: node
-#      package: trunk_plugin_tutorial
+      files: [ ALL ]
+      tools: [ foofinder ]
+      #      runtime: node
+      #      package: trunk_plugin_tutorial
       commands:
         - output: pass_fail
-          success_codes: [0,1]
+          success_codes: [ 0,1 ]
           run: node ${plugin}/findfoo.js ${target}
           read_output_from: stdout
